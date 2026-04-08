@@ -4,5 +4,5 @@ contact_links:
     url: https://github.com/lksnext/cloud-platform-core/discussions
     about: Please use Discussions for questions, design conversations, and general support.
   - name: Security reports
-    url: mailto:security@lksnext.com
+    url: https://github.com/lksnext/cloud-platform-core/security/advisories
     about: Please do not report security vulnerabilities in public issues.
