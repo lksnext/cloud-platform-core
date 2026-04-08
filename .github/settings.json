@@ -1,0 +1,40 @@
+{
+  "repository": {
+    "name": "cloud-platform-core",
+    "description": "Cloud Platform Core is a foundational library providing standardized naming, conventions, and reusable building blocks for multi-cloud infrastructure across AWS and Azure, supporting both CDK and Terraform.",
+    "private": false,
+    "default_branch": "main",
+    "allow_squash_merge": true,
+    "allow_merge_commit": false,
+    "allow_rebase_merge": true,
+    "delete_branch_on_merge": true,
+    "has_issues": true,
+    "has_projects": false,
+    "has_wiki": false
+  },
+  "branches": [
+    {
+      "name": "main",
+      "protection": {
+        "required_pull_request_reviews": {
+          "required_approving_review_count": 1,
+          "dismiss_stale_reviews": true,
+          "require_code_owner_reviews": true
+        },
+        "required_status_checks": {
+          "strict": true,
+          "contexts": []
+        },
+        "enforce_admins": true,
+        "restrictions": null
+      }
+    }
+  ],
+  "labels": [
+    { "name": "bug", "color": "d73a4a" },
+    { "name": "enhancement", "color": "a2eeef" },
+    { "name": "documentation", "color": "0075ca" },
+    { "name": "naming", "color": "e4e669" },
+    { "name": "design", "color": "d876e3" }
+  ]
+}
