@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and general support
+    url: https://github.com/lksnext/cloud-platform-core/discussions
+    about: Please use Discussions for questions, design conversations, and general support.
+  - name: Security reports
+    url: mailto:security@lksnext.com
+    about: Please do not report security vulnerabilities in public issues.

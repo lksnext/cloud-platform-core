@@ -1,0 +1,14 @@
+# Global owners (fallback)
+* @lks-next/cloud-platform-maintainers
+
+# --- AWS CDK ---
+/packages/aws-cdk/ @lks-next/aws-platform @lks-next/cloud-platform-maintainers
+
+# --- Azure Terraform ---
+/packages/azure-terraform/ @lks-next/azure-platform @lks-next/cloud-platform-maintainers
+
+# --- CI / GitHub config ---
+/.github/ @lks-next/cloud-platform-maintainers
+
+# --- Security ---
+SECURITY.md @lks-next/security-team

@@ -1,0 +1,84 @@
+name: Naming change proposal
+description: Propose a change to the naming model, rendering rules, or naming RFC
+title: "[Naming]: "
+labels:
+  - naming
+  - design
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Naming changes are high impact. Please provide rationale, examples, and compatibility considerations.
+
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+      description: Describe the exact naming rule, model, or rendering change
+      placeholder: Explain what should change
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this change needed?
+      placeholder: Explain the motivation and expected benefits
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_examples
+    attributes:
+      label: Current examples
+      description: Provide current names or outputs affected by this proposal
+      placeholder: |
+        Current:
+        - ...
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_examples
+    attributes:
+      label: Proposed examples
+      description: Provide the desired output after the change
+      placeholder: |
+        Proposed:
+        - ...
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Backward compatibility analysis
+      description: Explain whether this is non-breaking, conditionally breaking, or breaking
+      placeholder: Describe migration needs, aliases, compatibility shims, or deprecations
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: affected
+    attributes:
+      label: Affected areas
+      options:
+        - label: naming model
+        - label: aws renderer
+        - label: azure renderer
+        - label: validation
+        - label: parsing
+        - label: tests
+        - label: documentation/RFC
+
+  - type: textarea
+    id: migration
+    attributes:
+      label: Migration notes
+      description: If existing outputs may change, describe a migration path
+      placeholder: Optional, but strongly recommended for impactful changes
+    validations:
+      required: false

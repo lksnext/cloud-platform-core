@@ -1,0 +1,27 @@
+{
+  "name": "cloud-platform-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloud Platform Core is a foundational library providing standardized naming, conventions, and reusable building blocks for multi-cloud infrastructure across AWS and Azure, supporting both CDK and Terraform.",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/lksnext/cloud-platform-core#readme",
+  "bugs": {
+    "url": "https://github.com/lksnext/cloud-platform-core/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lksnext/cloud-platform-core.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.30.0",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "husky": "^9.0.0"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}

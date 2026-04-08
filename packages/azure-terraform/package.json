@@ -1,0 +1,16 @@
+{
+  "name": "@lksnext/azure-terraform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloud Platform Core – Azure Terraform modules.",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/lksnext/cloud-platform-core#readme",
+  "bugs": {
+    "url": "https://github.com/lksnext/cloud-platform-core/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lksnext/cloud-platform-core.git",
+    "directory": "packages/azure-terraform"
+  }
+}
