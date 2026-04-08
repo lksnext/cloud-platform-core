@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": [
+    "en_us",
+    "companies",
+    "aws",
+    "terraform",
+    "typescript",
+    "node",
+    "bash",
+    "docker",
+    "filetypes",
+    "project-words"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./.cspell/project-words.txt",
+      "addWords": true
+    }
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    ".git/**",
+    ".changeset/**",
+    ".serena/**",
+    ".sdd/**",
+    "package-lock.json",
+    "*.tfstate",
+    "*.tfstate.*",
+    "**/.terraform/**",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "overrides": [
+    {
+      "filename": "**/*.{tf,tfvars}",
+      "dictionaries": ["terraform", "aws", "en_us", "project-words"]
+    },
+    {
+      "filename": "**/*.{ts,tsx,js,mjs,cjs}",
+      "dictionaries": ["typescript", "node", "aws", "en_us", "project-words"]
+    },
+    {
+      "filename": "**/*.{yml,yaml}",
+      "dictionaries": ["en_us", "bash", "docker", "project-words"]
+    }
+  ]
+}

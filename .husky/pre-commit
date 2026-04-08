@@ -1,0 +1,1 @@
+npx cspell lint --no-progress $(git diff --cached --name-only --diff-filter=ACM | tr '\n' ' ')

@@ -1,0 +1,27 @@
+# Project-specific words for cspell
+# Add any domain-specific terms, acronyms, or proper nouns here.
+
+lksnext
+lks
+changesets
+changeset
+commitlint
+husky
+semver
+monorepo
+codeowners
+tfvars
+tfstate
+terraformrc
+workspaces
+multicloud
+multitenant
+saas
+iac
+namer
+naming
+wl
+cdk
+serena
+sdd
+editorconfig

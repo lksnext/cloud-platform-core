@@ -19,9 +19,11 @@
     "@changesets/cli": "^2.30.0",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
+    "cspell": "^10.0.0",
     "husky": "^9.0.0"
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "spellcheck": "cspell lint --no-progress \"**/*.{ts,js,mjs,tf,md,yml,yaml,json}\""
   }
 }
