@@ -115,6 +115,7 @@ We welcome contributions from the community.
 
 Please read:
 
+- [DEVELOPMENT.md](./DEVELOPMENT.md) — local environment setup
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 

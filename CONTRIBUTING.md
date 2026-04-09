@@ -22,6 +22,9 @@ You can contribute in several ways:
 
 ## 🧭 Before You Start
 
+First, set up your local development environment by following the
+[Development Guide](./DEVELOPMENT.md).
+
 Before opening a PR, please:
 
 1. Check existing issues and discussions

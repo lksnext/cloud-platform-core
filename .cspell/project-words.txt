@@ -25,3 +25,13 @@ cdk
 serena
 sdd
 editorconfig
+nvm
+nvmrc
+gpgsign
+gpg
+signingkey
+keyid
+hashicorp
+typicode
+bashrc
+zshrc
