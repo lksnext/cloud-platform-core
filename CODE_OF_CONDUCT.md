@@ -2,7 +2,10 @@
 
 ## Our Pledge
 
-We as contributors and maintainers pledge to make participation in this project and our community a respectful, inclusive, and harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity or expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+We as contributors and maintainers pledge to make participation in this project and our community a
+respectful, inclusive, and harassment-free experience for everyone, regardless of age, body size,
+disability, ethnicity, gender identity or expression, level of experience, nationality, personal
+appearance, race, religion, or sexual identity and orientation.
 
 We are committed to fostering an open and welcoming environment.
 
@@ -31,9 +34,11 @@ Examples of unacceptable behavior include:
 
 ## Enforcement Responsibilities
 
-Project maintainers are responsible for clarifying and enforcing our standards of acceptable behavior.
+Project maintainers are responsible for clarifying and enforcing our standards of acceptable
+behavior.
 
-Maintainers may take appropriate and fair corrective action in response to any behavior they deem inappropriate, including warning, temporary ban, or permanent ban from the project.
+Maintainers may take appropriate and fair corrective action in response to any behavior they deem
+inappropriate, including warning, temporary ban, or permanent ban from the project.
 
 ---
 
@@ -70,4 +75,5 @@ Maintainers will follow these general steps when addressing violations:
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 2.1.
+This Code of Conduct is adapted from the
+[Contributor Covenant](https://www.contributor-covenant.org/), version 2.1.

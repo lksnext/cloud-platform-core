@@ -1,7 +1,8 @@
 # Contributing to Cloud Platform Core
 
-First of all, thank you for your interest in contributing! 🎉
-Cloud Platform Core is an open-source project aimed at standardizing naming, conventions, and reusable infrastructure patterns across AWS and Azure.
+First of all, thank you for your interest in contributing! 🎉 Cloud Platform Core is an open-source
+project aimed at standardizing naming, conventions, and reusable infrastructure patterns across AWS
+and Azure.
 
 We welcome contributions from everyone.
 
@@ -11,11 +12,11 @@ We welcome contributions from everyone.
 
 You can contribute in several ways:
 
-* 🐛 Reporting bugs
-* 💡 Proposing new features or improvements
-* 📖 Improving documentation
-* 🧱 Adding or improving modules (CDK / Terraform)
-* 🔍 Reviewing pull requests
+- 🐛 Reporting bugs
+- 💡 Proposing new features or improvements
+- 📖 Improving documentation
+- 🧱 Adding or improving modules (CDK / Terraform)
+- 🔍 Reviewing pull requests
 
 ---
 
@@ -41,8 +42,8 @@ packages/
 .changeset/
 ```
 
-* `packages/aws-cdk/` → reusable AWS CDK constructs, published to npm
-* `packages/azure-terraform/` → reusable Azure Terraform modules, not published to npm
+- `packages/aws-cdk/` → reusable AWS CDK constructs, published to npm
+- `packages/azure-terraform/` → reusable Azure Terraform modules, not published to npm
 
 ---
 
@@ -70,7 +71,8 @@ git checkout -b feature/my-change
 
 3. Make your changes
 4. Add tests if applicable
-5. Commit using [Conventional Commits](https://www.conventionalcommits.org/) (enforced by `commitlint`)
+5. Commit using [Conventional Commits](https://www.conventionalcommits.org/) (enforced by
+   `commitlint`)
 6. Create a changeset:
 
 ```bash
@@ -83,15 +85,16 @@ npx changeset
 
 ## 🧪 Testing & Quality
 
-* Ensure existing tests pass
-* Add new tests when introducing logic changes
-* Keep changes minimal and focused
+- Ensure existing tests pass
+- Add new tests when introducing logic changes
+- Keep changes minimal and focused
 
 ---
 
 ## 📝 Commit Guidelines
 
-This project **enforces** [Conventional Commits](https://www.conventionalcommits.org/) via `commitlint`. Non-conforming commits will be rejected by the `commit-msg` hook.
+This project **enforces** [Conventional Commits](https://www.conventionalcommits.org/) via
+`commitlint`. Non-conforming commits will be rejected by the `commit-msg` hook.
 
 ```text
 feat: add tenant-aware naming
@@ -106,8 +109,8 @@ chore: update dependencies
 
 This project uses:
 
-* **Semantic Versioning (SemVer)**
-* **Changesets** for versioning and changelog generation
+- **Semantic Versioning (SemVer)**
+- **Changesets** for versioning and changelog generation
 
 Every PR affecting behavior should include a changeset.
 
@@ -115,11 +118,11 @@ Every PR affecting behavior should include a changeset.
 
 ## 🔍 Pull Request Process
 
-* Ensure your PR is focused and well described
-* Link related issues
-* Include examples where relevant
-* Update documentation if needed
-* Pass all CI checks
+- Ensure your PR is focused and well described
+- Link related issues
+- Include examples where relevant
+- Update documentation if needed
+- Pass all CI checks
 
 PRs will be reviewed by code owners.
 
@@ -148,8 +151,8 @@ By participating in this project, you agree to abide by our [Code of Conduct](./
 
 If you’re unsure about something:
 
-* Open a GitHub Discussion
-* Or create an issue
+- Open a GitHub Discussion
+- Or create an issue
 
 We prefer early alignment over rework.
 

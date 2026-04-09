@@ -1,8 +1,10 @@
 # Cloud Platform Core
 
-**Cloud Platform Core** is a foundational multi-cloud library that provides standardized naming, conventions, and reusable building blocks for infrastructure across AWS and Azure.
+**Cloud Platform Core** is a foundational multi-cloud library that provides standardized naming,
+conventions, and reusable building blocks for infrastructure across AWS and Azure.
 
-The project aims to improve consistency, governance, and developer experience in cloud platform development, supporting both **AWS CDK (TypeScript)** and **Terraform (Azure)**.
+The project aims to improve consistency, governance, and developer experience in cloud platform
+development, supporting both **AWS CDK (TypeScript)** and **Terraform (Azure)**.
 
 ---
 
@@ -10,17 +12,17 @@ The project aims to improve consistency, governance, and developer experience in
 
 Cloud Platform Core defines a unified approach to:
 
-* Resource naming conventions
-* Infrastructure patterns
-* Cross-cloud consistency
-* Platform-level governance
+- Resource naming conventions
+- Infrastructure patterns
+- Cross-cloud consistency
+- Platform-level governance
 
 It is designed for:
 
-* Platform engineering teams
-* Multi-cloud environments
-* SaaS architectures (single-tenant and multi-tenant)
-* Enterprise-scale infrastructure
+- Platform engineering teams
+- Multi-cloud environments
+- SaaS architectures (single-tenant and multi-tenant)
+- Enterprise-scale infrastructure
 
 ---
 
@@ -44,12 +46,12 @@ cloud-platform-core/
 
 The project defines a consistent naming model across cloud providers, covering:
 
-* Environment (`dev`, `prod`, etc.)
-* Scope (`shared`, `wl`, etc.)
-* Application / domain
-* Region
-* Resource type
-* Purpose
+- Environment (`dev`, `prod`, etc.)
+- Scope (`shared`, `wl`, etc.)
+- Application / domain
+- Region
+- Resource type
+- Purpose
 
 ---
 
@@ -68,7 +70,7 @@ The goal is to provide a **consistent developer experience across both ecosystem
 
 Certain parts of the project are governed more strictly:
 
-* Cloud implementations → **moderate governance**
+- Cloud implementations → **moderate governance**
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full governance model.
 
@@ -102,8 +104,8 @@ module "naming" {
 
 ⚠️ This project is in an early stage.
 
-* APIs may change
-* Feedback and contributions are welcome
+- APIs may change
+- Feedback and contributions are welcome
 
 ---
 
@@ -113,8 +115,8 @@ We welcome contributions from the community.
 
 Please read:
 
-* [CONTRIBUTING.md](./CONTRIBUTING.md)
-* [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 For significant changes (especially naming), please open an issue first.
 
@@ -124,8 +126,8 @@ For significant changes (especially naming), please open an issue first.
 
 This project follows:
 
-* [Semantic Versioning (SemVer)](https://semver.org/)
-* [Changesets](https://github.com/changesets/changesets) for versioning and changelogs
+- [Semantic Versioning (SemVer)](https://semver.org/)
+- [Changesets](https://github.com/changesets/changesets) for versioning and changelogs
 
 ---
 
@@ -133,7 +135,7 @@ This project follows:
 
 If you discover a security issue, please report it according to:
 
-* [SECURITY.md](./SECURITY.md)
+- [SECURITY.md](./SECURITY.md)
 
 ---
 
@@ -155,10 +157,10 @@ LKS Next
 
 Cloud Platform Core was created to address common challenges in cloud environments:
 
-* Inconsistent naming across teams and platforms
-* Lack of standardization in infrastructure
-* Difficulty managing multi-cloud architectures
-* Poor developer experience in IaC
+- Inconsistent naming across teams and platforms
+- Lack of standardization in infrastructure
+- Difficulty managing multi-cloud architectures
+- Poor developer experience in IaC
 
 This project provides a **shared foundation** to solve these problems.
 

@@ -4,9 +4,9 @@
 
 The following versions of Cloud Platform Core currently receive security updates:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 0.1.x   | ✅ Yes             |
+| Version | Supported |
+| ------- | --------- |
+| 0.1.x   | ✅ Yes    |
 
 Older versions are not supported. Please upgrade to the latest release.
 
@@ -38,7 +38,8 @@ Please include the following in your report:
 4. A patched release will be published
 5. The vulnerability will be disclosed publicly after users have had time to update
 
-We appreciate responsible disclosure and will credit researchers in the release notes unless anonymity is requested.
+We appreciate responsible disclosure and will credit researchers in the release notes unless
+anonymity is requested.
 
 ---
 

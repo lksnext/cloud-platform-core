@@ -8,10 +8,10 @@ If you need help using Cloud Platform Core, there are several ways to get suppor
 
 Use GitHub Discussions for:
 
-* Questions about usage
-* Design discussions
-* Best practices
-* Clarifications about naming conventions
+- Questions about usage
+- Design discussions
+- Best practices
+- Clarifications about naming conventions
 
 👉 This is the preferred place for general support.
 
@@ -21,14 +21,14 @@ Use GitHub Discussions for:
 
 Use GitHub Issues for:
 
-* Bug reports
-* Documentation issues
-* Feature requests
+- Bug reports
+- Documentation issues
+- Feature requests
 
 Please make sure to:
 
-* Search existing issues before opening a new one
-* Provide clear and reproducible information
+- Search existing issues before opening a new one
+- Provide clear and reproducible information
 
 ---
 
@@ -36,9 +36,9 @@ Please make sure to:
 
 To keep issues focused, please do not use them for:
 
-* General questions (use Discussions instead)
-* Personal support requests
-* Off-topic conversations
+- General questions (use Discussions instead)
+- Personal support requests
+- Off-topic conversations
 
 ---
 
@@ -46,8 +46,8 @@ To keep issues focused, please do not use them for:
 
 If you discover a security vulnerability:
 
-* **Do not open a public issue**
-* Follow the instructions in [SECURITY.md](./SECURITY.md)
+- **Do not open a public issue**
+- Follow the instructions in [SECURITY.md](./SECURITY.md)
 
 ---
 
@@ -55,8 +55,8 @@ If you discover a security vulnerability:
 
 This is an open source project maintained by LKS Next.
 
-* We aim to respond to issues and discussions within a few business days
-* Response times may vary depending on availability and complexity
+- We aim to respond to issues and discussions within a few business days
+- Response times may vary depending on availability and complexity
 
 ---
 
@@ -72,7 +72,7 @@ If you require enterprise-grade support, please contact LKS Next through officia
 
 Please be respectful and follow our:
 
-* [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 ---
 
@@ -80,8 +80,7 @@ Please be respectful and follow our:
 
 If you find an issue or want to improve the project:
 
-👉 Please consider contributing!
-See [CONTRIBUTING.md](./CONTRIBUTING.md)
+👉 Please consider contributing! See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ---
 
