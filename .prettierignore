@@ -1,0 +1,16 @@
+node_modules/
+.git/
+.changeset/
+.serena/
+.sdd/
+dist/
+build/
+out/
+coverage/
+*.tfstate
+*.tfstate.*
+**/.terraform/
+package-lock.json
+CHANGELOG.md
+LICENSE
+NOTICE

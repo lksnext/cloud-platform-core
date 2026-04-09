@@ -20,10 +20,13 @@
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "cspell": "^10.0.0",
-    "husky": "^9.0.0"
+    "husky": "^9.0.0",
+    "prettier": "^3.8.1"
   },
   "scripts": {
     "prepare": "husky",
-    "spellcheck": "cspell lint --no-progress \"**/*.{ts,js,mjs,tf,md,yml,yaml,json}\""
+    "spellcheck": "cspell lint --no-progress \"**/*.{ts,js,mjs,tf,md,yml,yaml,json}\"",
+    "format": "prettier --write --ignore-unknown .",
+    "format:check": "prettier --check --ignore-unknown ."
   }
 }
