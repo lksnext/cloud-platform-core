@@ -1,9 +1,7 @@
-# Format staged files with prettier
+# Format and spell check staged files
 STAGED=$(git diff --cached --name-only --diff-filter=ACM | tr '\n' ' ')
 if [ -n "$STAGED" ]; then
   npx prettier --write --ignore-unknown $STAGED
   git add $STAGED
+  npx cspell lint --no-progress $STAGED
 fi
-
-# Spell check staged files
-npx cspell lint --no-progress $STAGED
