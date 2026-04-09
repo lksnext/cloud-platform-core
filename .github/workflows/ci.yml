@@ -1,0 +1,123 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  # ─── Quality checks ────────────────────────────────────────────────────────
+  quality:
+    name: Quality checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Spell check
+        run: npm run spellcheck
+
+  # ─── Commitlint (PRs only) ─────────────────────────────────────────────────
+  commitlint:
+    name: Commit messages
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate PR commit messages
+        run: |
+          npx commitlint \
+            --from ${{ github.event.pull_request.base.sha }} \
+            --to ${{ github.event.pull_request.head.sha }} \
+            --verbose
+
+  # ─── Changeset check (PRs only) ────────────────────────────────────────────
+  changeset:
+    name: Changeset
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for changeset
+        run: |
+          CHANGESETS=$(git diff --name-only --diff-filter=A origin/${{ github.base_ref }}...HEAD \
+            | grep '^\.changeset/.*\.md$' \
+            | grep -v '^\.changeset/README\.md$' \
+            || true)
+
+          if [ -z "$CHANGESETS" ]; then
+            echo ""
+            echo "⚠️  No changeset found for this PR."
+            echo ""
+            echo "If this PR changes package behavior, run 'npx changeset' and commit the result."
+            echo "If this change does not affect any package (e.g. docs-only, CI), you can skip this check."
+            echo ""
+            exit 1
+          fi
+
+          echo "✅ Changeset found:"
+          echo "$CHANGESETS"
+
+  # ─── Terraform validate ────────────────────────────────────────────────────
+  terraform:
+    name: Terraform validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Validate Terraform modules
+        run: |
+          MODULES=$(find packages/azure-terraform -name "*.tf" -exec dirname {} \; | sort -u)
+
+          if [ -z "$MODULES" ]; then
+            echo "No Terraform files found — skipping validation."
+            exit 0
+          fi
+
+          FAILED=0
+          for dir in $MODULES; do
+            echo "→ Validating $dir"
+            terraform -chdir="$dir" init -backend=false -input=false
+            terraform -chdir="$dir" validate
+            if [ $? -ne 0 ]; then
+              FAILED=1
+            fi
+          done
+
+          exit $FAILED
